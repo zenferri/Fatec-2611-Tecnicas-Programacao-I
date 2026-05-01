@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+
+    <form method="get" action="formulario.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="José">
+        <br>
+        <br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf">
+        <br>
+        <br>
+        <label for="nascimento">Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento"><br><br>
+
+        <label for="genero">Gênero:</label>
+        <input type="radio" id="masc" name="genero" value="masculino">
+        <label for="html">Masculino</label>
+        <input type="radio" id="fem" name="genero" value="feminino">
+        <label for="css">Feminino</label><br>
+        <br>
+
+        <label for="profissao">Profissão:</label>
+        <select id="prof" name="prof">
+            <option value="profissao1">Profissão 1</option>
+            <option value="profissao2">Profissão 2</option>
+            <option value="profissao3">Profissão 3</option>
+            <option value="profissao4">Profissão 4</option>
+        </select>
+        <br><br>
+        <laber for="laser">Laser:</laber><br><br>
+        <input type="checkbox" id="laser1" name="laser1" value="laser1">
+        <label for="laser1">Laser 1</label><br>
+        <input type="checkbox" id="laser2" name="laser2" value="laser2">
+        <label for="laser2">Laser 2</label><br>
+        <input type="checkbox" id="laser3" name="laser3" value="laser3">
+        <label for="laser3">Laser 3</label>
+        <br>
+        <br>
+        <label for="obs">Observação:</label><br>
+        <textarea name="obs" rows="5" cols="50"></textarea>
+<br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
