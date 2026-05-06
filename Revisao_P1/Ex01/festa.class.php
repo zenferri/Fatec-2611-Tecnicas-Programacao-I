@@ -1,16 +1,19 @@
 <?php
 
+// Associação: Festa se relaciona com Cliente e Contrato.
+// Agregação: Festa referencia Decoracao, Cliente e Contrato recebidos externamente.
+// Não há herança nesta classe.
 class Festa
 {
     public function __construct(
         protected string $data_contrato = "",
         protected string $data_festa = "",
         protected float $valor = 0.00,
-        // relação com cliente
+        // Associação com Cliente.
         private ?Cliente $cliente = null,
-        // relação com contrato
+        // Associação com Contrato.
         private ?Contrato $contrato = null,
-        // relação com decoracao
+        // Agregação com Decoracao.
         private ?Decoracao $decoracao = null
     ) {}
 

@@ -1,5 +1,7 @@
 <?php
 
+// Herança: Cliente herda de Pessoa (Cliente "é uma" Pessoa).
+// Associação: Cliente participa de Festa por meio do atributo $cliente em Festa.
 class Cliente extends Pessoa
 {
     public function __construct(

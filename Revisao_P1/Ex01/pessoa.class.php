@@ -1,11 +1,14 @@
 <?php
 
+// Classe base do domínio.
+// Herança: Pessoa é superclasse de Cliente e Contrato.
 class Pessoa {
     public function __construct(
         protected string $nome = "",
-        // relação
+        // Composição: Pessoa cria e mantém objetos Telefone em $telefones.
+        // O ciclo de vida de Telefone depende de Pessoa neste modelo.
         protected array $telefones = array(),
-        // parametros pq não podemos receber o objeto pronto. 
+        // Associação: relação Pessoa -> Telefone ocorre via instanciação.
         int $ddd = 0, 
         string $numero = ""
     )

@@ -1,11 +1,13 @@
 <?php
 
+// Associação bidirecional opcional: Telefone pode referenciar uma Pessoa.
+// Não há herança nesta classe.
 class Telefone
 {
     public function __construct(
         protected int $ddd = 0,
         protected string $numero = "",
-        // relação com Pessoa
+        // Associação: um Telefone pode estar associado a uma Pessoa.
         private ?Pessoa $pessoa = null
     ) {}
 

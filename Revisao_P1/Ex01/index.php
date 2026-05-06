@@ -1,4 +1,8 @@
 <?php
+// Arquivo de uso/execução das classes.
+// Herança utilizada: Cliente e Contrato herdam de Pessoa.
+// Composição utilizada: Pessoa cria Telefone internamente.
+// Agregação/Associação utilizadas: Festa associa/agrega Cliente, Contrato e Decoracao.
 require_once 'pessoa.class.php'; // importa a classe Pessoa e deve vir antes das classes filhas (Cliente, Contrato, Festa, Decoracao)
 require_once 'cliente.class.php';
 require_once 'contrato.class.php';
