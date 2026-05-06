@@ -3,7 +3,9 @@
 // Herança utilizada: Cliente e Contrato herdam de Pessoa.
 // Composição utilizada: Pessoa cria Telefone internamente.
 // Agregação/Associação utilizadas: Festa associa/agrega Cliente, Contrato e Decoracao.
+
 require_once 'pessoa.class.php'; // importa a classe Pessoa e deve vir antes das classes filhas (Cliente, Contrato, Festa, Decoracao)
+
 require_once 'cliente.class.php';
 require_once 'contrato.class.php';
 require_once 'festa.class.php';
@@ -26,6 +28,7 @@ echo '<h3>Cliente</h3>';
 echo '<p><strong>Nome:</strong> ' . $festa->getCliente()->getNome() . '</p>';
 echo '<p><strong>CPF:</strong> ' . $festa->getCliente()->getCpf() . '</p>';
 echo '<p><strong>Telefones:</strong></p><ul>';
+
 foreach ($festa->getCliente()->getTelefones() as $telefone) {
     echo '<li>(' . $telefone->getDdd() . ') ' . $telefone->getNumero() . '</li>';
 }
@@ -44,3 +47,5 @@ echo '<h3>Decoração</h3>';
 echo '<p><strong>Descritivo:</strong> ' . $festa->getDecoracao()->getDescritivo() . '</p>'; 
 
 ?>
+
+
