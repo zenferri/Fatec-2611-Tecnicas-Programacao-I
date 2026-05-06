@@ -24,6 +24,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?controle=categoriaController&metodo=listar">Categoria de Produtos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?controle=usuarioController&metodo=inserir">Criar Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?controle=usuarioController&metodo=login">Entrar</a>
+                    </li>
                 </ul>
             </div>
         </div>
