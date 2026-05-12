@@ -12,8 +12,7 @@ class Decoracao {
         }
         public function setDescritivo($descritivo){
         $this->descritivo = $descritivo;
-        }
     }
+}
+?>
 
-
-    
