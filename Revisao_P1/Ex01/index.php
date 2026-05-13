@@ -1,4 +1,14 @@
 <?php
+/*
+ * Comentario geral do arquivo:
+ * Arquivo principal do Exercicio 01; instancia as classes de festa e exibe os dados na pagina.
+ *
+ * Relacionamentos demonstrados:
+ * - Heranca: Cliente e Contrato herdam de Pessoa.
+ * - Composicao: Pessoa cria objetos Telefone.
+ * - Associacao/agregacao: Festa referencia Cliente, Contrato e Decoracao.
+ */
+
 // Arquivo de uso/execução das classes.
 // Herança utilizada: Cliente e Contrato herdam de Pessoa.
 // Composição utilizada: Pessoa cria Telefone internamente.

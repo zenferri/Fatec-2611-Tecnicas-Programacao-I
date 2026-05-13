@@ -27,9 +27,10 @@ foreach($cliente->getCelulares() as $celular){
 $cliente2 = new Cliente("José Augusto", "22244455522");
 $celular = new Celular(14, "981281744", $cliente2);
 
-echo "<br>CELULAR 2<br>";
+echo "<br><h4>CLIENTE 2</h4>";
 echo "({$celular->getDdd()}) {$celular->getNumero()}<br>";
 echo "Nome: {$celular->getCliente()->getNome()}<br>";
 echo "CPF: " . $celular->getCliente()->getCpf() . "<br>";
+
 ?>
 

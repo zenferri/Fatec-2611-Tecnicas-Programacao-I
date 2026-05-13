@@ -1,4 +1,13 @@
 <?php
+/*
+ * Comentario geral do arquivo:
+ * Define a classe Telefone, usada em composicao com Pessoa para armazenar DDD e numero.
+ *
+ * Relacionamentos:
+ * - Composicao: Telefone e criado e guardado por Pessoa neste modelo.
+ * - Associacao: Telefone pode apontar para Pessoa pelo atributo $pessoa.
+ */
+
 
 // Associação bidirecional opcional: Telefone pode referenciar uma Pessoa.
 // Não há herança nesta classe.

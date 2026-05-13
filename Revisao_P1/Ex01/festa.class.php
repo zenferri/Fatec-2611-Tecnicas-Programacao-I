@@ -1,4 +1,14 @@
 <?php
+/*
+ * Comentario geral do arquivo:
+ * Define a classe Festa, reunindo datas, valor, cliente, contratado e decoracao do evento.
+ *
+ * Relacionamentos:
+ * - Associacao: Festa conhece Cliente, Contrato e Decoracao.
+ * - Agregacao: Festa recebe esses objetos prontos, sem cria-los internamente.
+ * - Heranca/composicao: nao ocorrem diretamente nesta classe.
+ */
+
 
 // Associação: Festa se relaciona com Cliente e Contrato.
 // Agregação: Festa referencia Decoracao, Cliente e Contrato recebidos externamente.

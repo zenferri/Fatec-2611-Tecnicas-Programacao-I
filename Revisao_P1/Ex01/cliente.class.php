@@ -1,4 +1,13 @@
 <?php
+/*
+ * Comentario geral do arquivo:
+ * Define a classe Cliente, especializando Pessoa com CPF para uso no cadastro da festa.
+ *
+ * Relacionamentos:
+ * - Heranca: Cliente herda de Pessoa.
+ * - Associacao: Cliente participa de Festa como cliente do evento.
+ */
+
 
 // Herança: Cliente herda de Pessoa (Cliente "é uma" Pessoa).
 // Associação: Cliente participa de Festa por meio do atributo $cliente em Festa.

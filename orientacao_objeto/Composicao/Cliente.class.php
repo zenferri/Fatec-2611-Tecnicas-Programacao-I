@@ -8,7 +8,7 @@ class Cliente {
         int $ddd = 0,
         string $numero = "",
      ) {
-        $this->celulares[] = new Celular($ddd, $numero); // adiciona o celular ao array na hora da criação do objeto cliente
+        $this->celulares[] = new Celular($ddd, $numero); // cria o objeto Celular e adiciona ao array na hora da criação do objeto cliente
      } // fim do construtor
 
     // métodos getters
@@ -35,7 +35,7 @@ class Cliente {
     }
     public function setCelulares($ddd, $numero)
     {
-        $this->celulares[] = new Celular($ddd, $numero); // adiciona o celular ao array na hora da criação do objeto cliente. Isso é composição porque o cliente possui um celular.
+        $this->celulares[] = new Celular($ddd, $numero); // adiciona o celular ao array já criado. Isso é composição porque o cliente possui um celular.
     }
 
 } // fim da classe

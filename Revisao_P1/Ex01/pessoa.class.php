@@ -1,4 +1,14 @@
 <?php
+/*
+ * Comentario geral do arquivo:
+ * Define a classe base Pessoa, compartilhando nome e telefones entre cliente e contratado.
+ *
+ * Relacionamentos:
+ * - Heranca: Pessoa e a superclasse de Cliente e Contrato.
+ * - Composicao: Pessoa cria e guarda objetos Telefone.
+ * - Associacao: Pessoa se relaciona com Telefone pela colecao $telefones.
+ */
+
 
 // Classe base do domínio.
 // Herança: Pessoa é superclasse de Cliente e Contrato.
@@ -16,6 +26,7 @@ class Pessoa
         $this->telefones[] = new Telefone($ddd, $numero);
     }
 
+    // metodos getters
     public function getNome()
     {
         return $this->nome;
@@ -24,6 +35,8 @@ class Pessoa
     {
         return $this->telefones;
     }
+
+    // metodos setters
     public function setNome($nome)
     {
         $this->nome = $nome;
@@ -33,3 +46,5 @@ class Pessoa
         $this->telefones[] = new Telefone($ddd, $numero);
     }
 }
+?>
+
