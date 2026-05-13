@@ -1,5 +1,5 @@
 <?php
-
+//
 class Visita
 {
 
@@ -58,7 +58,7 @@ class Visita
         $this->cd = $cd;
     }
 
-    public function setTruck()
+    public function setTruck($truck)
     {
         $this->truck = $truck;
     }

@@ -1,5 +1,5 @@
 <?php
-
+//
 //Herança: van herda de veiculo
 //Associação: van guarda encomenda em $encomendas
 

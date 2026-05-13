@@ -1,5 +1,5 @@
 <?php
-
+//
 require_once "veiculo.class.php";
 require_once "caminhao.class.php";
 require_once "van.class.php";
